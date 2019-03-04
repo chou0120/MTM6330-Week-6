@@ -1,43 +1,60 @@
 @import 'variable';
 
   body {
-    font: 400 15px Lato, sans-serif;
+    font-family: $fonts-text;
+    font: 400 15px;
     line-height: 1.8;
-    color: #818181;
+    background-color: $asphalt;
+    color: $text-color;
+  }
+  p{
+    color:$para-color;
   }
   h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: $text-color;
     font-weight: 600;
     margin-bottom: 30px;
+    font-family: $font-heading;
   }
   h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: $text-color;
     font-weight: 400;
     margin-bottom: 30px;
+    font-family: $font-heading;
   }  
-
   .jumbotron {
-    background-color: #130c0d;
-    color: #fff;
+    background-color:$grey;
+    color: $text-color;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
+    p{
+      color: $text-color;
+    }
   }
   .container-fluid {
     padding: 60px 50px;
   }
   .bg-grey {
-    background-color: #f6f6f6;
+    background-color: $grey;
+    color: $clouds;
+  }
+  .lg-grey{
+    width:100%;
+    background-color: $text-color;
+    h2{
+      color: $para-color;
+    }
   }
   .logo-small {
-    color: #f4511e;
+    color: $nav;
     font-size: 50px;
   }
   .logo {
-    color: #f4511e;
+    color: $nav;
     font-size: 200px;
   }
   .thumbnail {
@@ -50,16 +67,6 @@
     height: 100%;
     margin-bottom: 10px;
   }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
   .item h4 {
     font-size: 19px;
     line-height: 1.375em;
@@ -71,7 +78,7 @@
     font-style: normal;
   }
   .panel {
-    border: 1px solid #f4511e; 
+    border: 1px solid $nav; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
   }
@@ -79,13 +86,13 @@
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
+    border: 1px solid $nav;
+    background-color: $asphalt !important;
+    color: $nav;
   }
   .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
+    color: $asphalt !important;
+    background-color: $nav !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -94,47 +101,54 @@
     border-bottom-right-radius: 0px;
   }
   .panel-footer {
-    background-color: white !important;
+    background-color:$asphalt !important;
   }
   .panel-footer h3 {
     font-size: 32px;
   }
   .panel-footer h4 {
-    color: #aaa;
+    color: $asphalt;
     font-size: 14px;
   }
   .panel-footer .btn {
     margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
+    background-color: $nav;
+    color: $asphalt;
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: $nav;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: $font-heading;
   }
   .navbar li a, .navbar .navbar-brand {
-    color:  rgb(78, 92, 57) !important;
+    color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: rgb(78, 92, 57) !important;
+    color: $nav !important;
+    background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
   }
-  
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #f4511e;
+    color: $nav;
+  }
+  .footer{
+    p{
+      color:$text-color;
+    }    
+  }
+  .value{
+    color: $text-color;
   }
   .slideanim {visibility:hidden;}
   .slide {
